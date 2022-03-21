@@ -1,0 +1,36 @@
+<html>
+    <%-include('partials/head.html');%>
+    <body>
+        <header>
+            <%-include('partials/navegacion.html');%>
+        </header>
+        
+        <section class="banner">
+            <img class="banner__img" src="img/media/banner.png">
+            <div class="banner__info">
+                <h1 class="banner__title">Man-Hu</h1>
+                <p class="banner__p">Contacto</p>
+            </div>
+
+        </section>
+        <br>
+        <br>
+        <div id="content"> Contáctanos!</div>
+        <br>
+        <br>
+        <form action="agregar.php" method="post">
+            Nombre: <input type="text" name="nombre" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)"><br>
+            <br>
+            Apellido: <input type="text" name="apellido" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)"><br>
+            <br>
+            Email: <input type="text" name="email"><br>
+            <br>
+            Telefono: <input type="number" name="telefono"><br>
+            <br>
+            Mensaje: <br><textarea rows="5" name="mensaje" cols="30"></textarea><br>
+            <input type="submit" name="submit" value="Enviar">
+        </form>
+
+        <%-include('partials/footer.html');%>
+    </body>
+</html>

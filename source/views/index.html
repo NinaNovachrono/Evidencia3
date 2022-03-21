@@ -1,0 +1,66 @@
+<html>
+    <%-include('partials/head.html');%>
+    <body>
+        <header>
+            <%-include('partials/navegacion.html');%>
+        </header>
+      
+        <section class="banner">
+            <img class="banner__img" src="img/media/banner.png">
+            <div class="banner__info">
+                <h1 class="banner__title">Man-Hu</h1>
+                <p class="banner__p">Datos Generales</p>
+            </div>
+
+        </section>
+        <br>
+        <div id="contenedor">
+            <div>
+                <p>Conoce Nuestros Productos</p>
+                <p> <a href="productos"> <img src="img/media/productos.png" width="71%"></p></a>
+            </div>
+            <div>
+                <p>Productos 100% Hechos De Cacahuate</p>
+                <img src="img/media/mazapan.png" width="40%">
+            </div>
+        </div>
+        <div class="container">
+            <!-- (p>lorem)*20 (código a usar si tienes instalada la extensión emmet)-->
+        </div>
+    
+        <div class="social">
+            <a href="https://www.facebook.com/mazapanesgigantesartesanales">
+                <img id="RS" src="img/media/facebook.png" alt="Facebook">
+            </a>
+
+            <a href="https://wa.me/message/57ECY26TFRFSK1">
+                <img id="RS" src="img/media/whatsapp.png" alt="Whatsapp">
+            </a>
+        </div>
+
+        <style>
+            #prin {
+                position: relative;
+                margin-left: 15%;
+                width: 60%;
+                z-index: 2;
+                padding: 30px;
+                text-align: justify;
+                font-family: 'Montserrat', sans-serif;
+            }
+    
+            #contenedor {
+                font-family: 'Montserrat', sans-serif;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                text-align: center;
+            }
+    
+            #contenedor>div {
+                width: 50%;
+            }
+        </style>
+        <%-include('partials/footer.html');%>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+    <%-include('partials/head.html');%>
+    <body>
+        <header>
+            <%-include('partials/navegacion.html');%>
+        </header>
+
+        <section class="banner">
+            <img class="banner__img" src="img/media/banner.png">
+            <div class="banner__info">
+                <h1 class="banner__title">Man-Hu</h1>
+                <p class="banner__p">Administracion</p>
+            </div>
+            <form class="formAdmin" action="logincheck.php" method="post">
+                Usuario: <input type="text" name="user"> <br>
+                Contraseña: <input type="password" name="password"> 
+                <br><br>
+                <input type="submit">
+            </form>
+        </section>
+    
+        
+    </body>
+    
+</html>
